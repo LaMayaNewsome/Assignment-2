@@ -7,6 +7,7 @@ def calculateBMI(heightFeet, heightInches, weightPounds):
 
     if heightFeet <= 0 or heightInches < 0 or weightPounds <=0:
         return None
+    
     #weightPounds X 0.45 = weight
     weight = weightPounds * 0.45
     #(heightFeet * 12 + height inches) x 0.025 = height
