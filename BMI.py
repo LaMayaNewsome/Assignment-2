@@ -1,6 +1,6 @@
 def calculateBMI(heightFeet, heightInches, weightPounds):
     #BMI calculator
-
+    
     if heightFeet <= 0 or heightInches < 0 or weightPounds <=0:
         return None
     
@@ -13,8 +13,8 @@ def calculateBMI(heightFeet, heightInches, weightPounds):
     #weight / height = bmi)
     bmi = weight / height
 
-    print ("Your BMI is: ", bmi)
-    #print("Your BMI category is:", getCategory(bmi))
+    print ("Your BMI is:", bmi)
+    print("Your BMI category is:", getCategory(bmi))
 
 def getCategory(bmi):
     #Finds bmi category
@@ -45,4 +45,4 @@ heightInches = int(input("Enter your height in inches: "))
 weightPounds = int(input("Enter your weight in pounds (round to the nearest whole number): "))
 
 #Output value and category
-#calculateBMI(heightFeet, heightInches, weightPounds)
+calculateBMI(heightFeet, heightInches, weightPounds)
